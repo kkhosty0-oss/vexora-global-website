@@ -58,14 +58,71 @@ section{padding:75px 7%}
 footer{background:#050d1b;text-align:center;padding:28px;color:#aab8ca;font-size:14px}
 footer span{color:var(--gold)}
 @media(max-width:800px){
-header{flex-direction:column}
-nav{justify-content:center;gap:14px}
-.hero{padding:70px 6%}
-.features{grid-template-columns:repeat(2,1fr)}
-.feature:nth-child(2){border:0}
-.about-grid{grid-template-columns:1fr}
-.cards{grid-template-columns:1fr}
+  header{
+    flex-direction:column;
+    padding:16px 5%;
+    gap:14px;
+  }
 
+  header>a img{
+    height:75px !important;
+    max-width:100%;
+    object-fit:contain;
+  }
+
+  nav{
+    width:100%;
+    justify-content:center;
+    gap:10px 16px;
+  }
+
+  nav a{
+    font-size:13px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:60px 6%;
+  }
+
+  .hero-content{
+    width:100%;
+  }
+
+  .hero h2{
+    font-size:22px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .features{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+    padding:24px 5%;
+  }
+
+  .feature{
+    border-right:0;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:55px 6%;
+  }
+
+  .section-title h2{
+    font-size:29px;
+  }
+}
 .logo img {
     height: 75px;
     width: auto;
